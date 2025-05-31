@@ -1,0 +1,11 @@
+dist/
+build/
+out/
+
+node_modules/
+
+coverage/
+.cache/
+
+*.config.js
+*.config.ts

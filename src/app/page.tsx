@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div>
+    <main className='mx-auto max-w-3xl'>
       <h1>nefleia</h1>
-    </div>
+    </main>
   );
 }

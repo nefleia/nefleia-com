@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
+import { SectionTitle } from '@/components/SectionTitle';
 import { plants } from '@/data/plants';
 
 import profileImage from '../../public/images/profile.jpg';
-import { SectionTitle } from '@/components/SectionTitle';
 
 export default function Home() {
   return (

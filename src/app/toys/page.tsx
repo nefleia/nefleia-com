@@ -1,5 +1,6 @@
 import { ProductItem } from '@/components/ProductItem';
 import { products } from '@/data/products';
+
 export default function toys() {
   return (
     <div className='grid grid-cols-1 gap-7 sm:grid-cols-2'>

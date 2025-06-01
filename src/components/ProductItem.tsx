@@ -1,8 +1,9 @@
 'use client';
 
-import { Product } from '@/data/products';
-import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import Image from 'next/image';
+
+import { Product } from '@/data/products';
 
 export function ProductItem({ productInfo }: { productInfo: Product }) {
   const { name, image, links, description } = productInfo;

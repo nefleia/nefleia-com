@@ -12,6 +12,11 @@ export function Header() {
       </Link>
       <ul className='flex gap-6'>
         <li>
+          <Link href='/toys'>
+            <h2 className='hover:animate-wiggle-x font-bold'>toys</h2>
+          </Link>
+        </li>
+        <li>
           <LinkIcon url={links.github}>
             <Icon
               icon='ri:github-fill'

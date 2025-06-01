@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import { plants } from '@/data/plants';
-import { products } from '@/data/products';
 
 import profileImage from '../../public/images/profile.jpg';
 import { SectionTitle } from '@/components/SectionTitle';

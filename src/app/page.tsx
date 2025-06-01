@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <h1 className='text-2xl font-bold'>nefleia</h1>
       </div>
-      <div className='flex flex-col gap-5'>
+      <div className='mt-10 flex flex-col gap-5'>
         <section>
           <SectionTitle>work</SectionTitle>
           <p>

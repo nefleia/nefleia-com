@@ -12,7 +12,7 @@ export const products: Product[] = [
   {
     name: 'a-cat-a-day',
     image: '/images/products/a_cat_a_day.gif',
-    description: 'Google Chrome extension to be healed by cats',
+    description: 'Chrome extension to be healed by cats',
     links: { github: 'https://github.com/nefleia/a-cat-a-day' },
   },
   {

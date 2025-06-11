@@ -3,7 +3,7 @@ import { products } from '@/data/products';
 
 export default function toys() {
   return (
-    <div className='grid grid-cols-1 gap-7 sm:grid-cols-2'>
+    <div className='animate-fade-in grid grid-cols-1 gap-7 sm:grid-cols-2'>
       {products.map((product) => (
         <ProductItem key={product.name} productInfo={product} />
       ))}

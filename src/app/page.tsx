@@ -4,10 +4,11 @@ import { SectionTitle } from '@/components/SectionTitle';
 import { plants } from '@/data/plants';
 
 import profileImage from '../../public/images/profile.jpg';
+import { Fragment } from 'react';
 
 export default function Home() {
   return (
-    <>
+    <div className='animate-fade-in'>
       <div className='flex flex-col items-center gap-4'>
         <div className='tablet:size-40 size-32 rounded-full bg-neutral-200'>
           <Image
@@ -52,7 +53,11 @@ export default function Home() {
             })}
           </div>
         </section>
+        <section>
+          <SectionTitle>fav</SectionTitle>
+          <p></p>
+        </section>
       </div>
-    </>
+    </div>
   );
 }

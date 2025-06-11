@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     name: 'tortilla-page',
     image: '/images/products/portfolio.png',
-    description: 'This portfolio site',
+    description: 'My past site',
     links: {
       github: 'Old portfolio site.',
       web: 'https://tortilla.page',

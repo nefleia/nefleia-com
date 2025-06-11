@@ -5,6 +5,8 @@ import { plants } from '@/data/plants';
 
 import profileImage from '../../public/images/profile.jpg';
 import { Fragment } from 'react';
+import { movies } from '@/data/movies';
+import { books } from '@/data/books';
 
 export default function Home() {
   return (
@@ -55,7 +57,16 @@ export default function Home() {
         </section>
         <section>
           <SectionTitle>fav</SectionTitle>
-          <p></p>
+          <span>🎬</span>
+          <p>
+            {movies
+              .map((movie) => `${movie.title} - ${movie.director}`)
+              .join(' / ')}
+          </p>
+          <span>📚</span>
+          <p className=''>
+            {books.map((book) => `${book.title} - ${book.author}`).join(' / ')}
+          </p>
         </section>
       </div>
     </div>

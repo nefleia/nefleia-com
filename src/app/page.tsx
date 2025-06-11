@@ -1,12 +1,11 @@
 import Image from 'next/image';
 
 import { SectionTitle } from '@/components/SectionTitle';
+import { books } from '@/data/books';
+import { movies } from '@/data/movies';
 import { plants } from '@/data/plants';
 
 import profileImage from '../../public/images/profile.jpg';
-import { Fragment } from 'react';
-import { movies } from '@/data/movies';
-import { books } from '@/data/books';
 
 export default function Home() {
   return (

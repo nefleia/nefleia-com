@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Nunito_Sans } from 'next/font/google';
 
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
@@ -7,13 +7,8 @@ import type { Metadata } from 'next';
 
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const nunitoSans = Nunito_Sans({
+  variable: '--font-nunito-sans',
   subsets: ['latin'],
 });
 
@@ -30,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} flex min-h-dvh flex-col antialiased`}
+        className={`${nunitoSans.variable} flex min-h-dvh flex-col font-sans antialiased`}
       >
         <Header />
         <main className='mx-auto my-10 max-w-3xl flex-grow px-5 sm:px-10'>

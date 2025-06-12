@@ -9,7 +9,7 @@ export function ProductItem({ productInfo }: { productInfo: Product }) {
   const { name, image, links, description } = productInfo;
 
   return (
-    <div className='flex flex-col items-center rounded-lg bg-neutral-300 p-5 sm:p-4'>
+    <div className='flex h-full flex-col items-center rounded-lg bg-neutral-300 p-5 sm:p-4'>
       <div className='aspect-video w-full rounded-lg bg-neutral-200'>
         <Image
           src={image}
@@ -26,7 +26,7 @@ export function ProductItem({ productInfo }: { productInfo: Product }) {
         <p className='text-sm text-neutral-600/80'>{description}</p>
       </div>
       {links !== undefined && (
-        <div className='laptop:pt-5 flex flex-wrap items-center justify-center gap-5 pt-2'>
+        <div className='laptop:pt-5 mt-auto flex flex-wrap items-center justify-center gap-5 pt-2'>
           {links?.github && (
             <a
               href={links.github}

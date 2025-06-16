@@ -7,7 +7,7 @@ import links from '../data/links.json';
 export function Header() {
   return (
     <header className='mx-5 my-5 flex justify-between sm:mx-12'>
-      <Link href='./' className='pointer hover:animate-pulse'>
+      <Link href='/' className='pointer hover:animate-pulse'>
         <h1 className='text-xl font-bold'>nefleia</h1>
       </Link>
       <ul className='flex gap-3 sm:gap-6'>

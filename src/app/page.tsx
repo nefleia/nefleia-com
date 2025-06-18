@@ -5,20 +5,20 @@ import { books } from '@/data/books';
 import { movies } from '@/data/movies';
 import { plants } from '@/data/plants';
 
-import profileImage from '../../public/images/profile.jpg';
+import profileImage from '../../public/images/profile.png';
 
 export default function Home() {
   return (
     <div className='animate-fade-in'>
       <div className='flex flex-col items-center gap-4'>
-        <div className='tablet:size-40 size-32 rounded-full bg-neutral-200'>
+        <div className='tablet:size-40 size-32 rounded-full'>
           <Image
             src={profileImage}
             width={1125}
             height={1125}
             alt='profile image'
             placeholder='blur'
-            className='tablet:size-40 size-32 rounded-full'
+            className='tablet:size-40 hover:animate-spin-slowest size-32 rounded-full object-cover'
           />
         </div>
         <h1 className='text-2xl font-bold'>nefleia</h1>

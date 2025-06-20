@@ -6,13 +6,11 @@ import { client } from '@/libs/client';
 import { Blog } from '@/types/micro-cms';
 
 type Props = {
-  params: {
-    blogId: string;
-  };
+  params: Promise<{ blogId: string }>;
 };
 
-export default async function BlogDetail({ params }: Props) {
-  const { blogId } = params;
+export default async function BlogDetail(props: Props) {
+  const { blogId } = await props.params;
 
   const data: Blog = await client
     .get({

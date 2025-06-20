@@ -10,10 +10,15 @@ export function Header() {
       <Link href='/' className='pointer hover:animate-pulse'>
         <h1 className='text-xl font-bold'>nefleia</h1>
       </Link>
-      <ul className='flex gap-3 sm:gap-6'>
+      <ul className='flex items-center gap-3 sm:gap-6'>
         <li>
           <Link href='/toys'>
             <h2 className='hover:animate-wiggle-x font-bold'>toys</h2>
+          </Link>
+        </li>
+        <li>
+          <Link href='/blogs'>
+            <h2 className='hover:animate-wiggle-x font-bold'>blogs</h2>
           </Link>
         </li>
         <li>

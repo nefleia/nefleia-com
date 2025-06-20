@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  MICRO_CMS_SERVICE_DOMAIN: ${{ secrets.MICRO_CMS_SERVICE_DOMAIN }}
+  MICRO_CMS_API_KEY: ${{ secrets.MICRO_CMS_API_KEY }}
 jobs:
   lint:
     name: lint
@@ -57,6 +60,7 @@ jobs:
     needs:
       - lint
       - format
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

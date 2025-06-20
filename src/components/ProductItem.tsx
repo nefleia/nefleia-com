@@ -10,7 +10,7 @@ export function ProductItem({ productInfo }: { productInfo: Product }) {
 
   return (
     <div className='flex h-full flex-col items-center rounded-lg bg-neutral-300 p-5 sm:p-4'>
-      <div className='aspect-video w-full rounded-lg bg-neutral-200'>
+      <div className='w-full rounded-lg bg-neutral-200'>
         <Image
           src={image}
           width={1920}
